@@ -1,0 +1,11 @@
+{% extends "base/base.html" %}
+
+{% block page_title %}
+	Artikel
+{% endblock page_title %}
+
+{% block contents %}
+	<h3>{{artikel.judul}}</h3>
+	<h5>Kategori : {{artikel.kategori}} | {{artikel.published}}</h5>
+	<p>{{artikel.isi}}</p>
+{% endblock contents %}
